@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="base">
+        <div class="divCentradoxy">
+          <img class="logoSize" src="./Logo.png" alt="Logo" />
+        </div>
+        <div class="row">
+          <div class="circuloBlanco">
+            <div class="circuloAzul"></div>
+          </div>
+          <div class="circuloNegro">
+            <div class="circuloRojo"></div>
+          </div>
+          <div class="circuloNegro">
+            <div class="circuloAmarillo"></div>
+          </div>
+          <div class="circuloNegro">
+            <div class="circuloVerde"></div>
+          </div>
+        </div>
+        <div class="divCentradoxy">
+          <div class="pantalla">
+            <img class="imagenSize" src="./Default.png" alt="Default" id="imagenId"/>
+          </div>
+        </div>
+
+        <div class="divCentradoxy">
+          <input type="text" id="nombrePokemon" placeholder="Pikachu" />
+          <button onclick="fetchPokemon()">Buscar</button>
+        </div>
+      </div>
+
+      <div class="base">
+        <div class="divCentradoxy p-y-20">
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" />
+          
+        </div>
+        <div class="divCentradoxy p-y-20">
+            <label for="tipo">Tipo: </label>
+            <input type="text" id="tipo" />
+            
+          </div>
+          <div class="divCentradoxy column">
+            <label for="nombre" class="titulo">Estadística </label>
+            <div id="estadisticas" class="divContendor">
+
+            </div>
+            
+          </div>
+          <div class="divCentradoxy column">
+            <label for="nombre" class="titulo">Movimientos </label>
+            <div id="movimientos" class="divContendor">
+
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+      <script src="./pokedex.js"></script>
+  </footer>
+</html>
